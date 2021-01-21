@@ -11,12 +11,11 @@
 }
 
 body {
-    /* background: var(--Dark-blue);
-    color: var(--white-color); */
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
+    transition: color 5s linear;
 }
 
 * {
@@ -55,16 +54,18 @@ img {
 section {
     padding: 70px 20px;
     margin: 0 auto;
+    transition: color .5s linear;
 }
 
 button {
-    padding: 10px 30px;
+    padding: 12px 30px;
     border-radius: 100px;
     border: 1px solid transparent;
     background: var(--cyan-color);
     color: var(--white-color);
     cursor: pointer;
     margin: 25px auto;
+    width: 200px;
 }
 input {
     background: var(--white-color);
@@ -74,6 +75,7 @@ input {
     font-size: 14px;
     margin-top: 25px;
     padding: 12px 27px;
+    width: 200px;
 }
 
 p {
@@ -90,6 +92,10 @@ section:nth-child(even) {
     color: var(--Dark-blue);
 }
 
+section:nth-child(even).dark-theme {
+    background:  var(--Dark-blue);
+    color: var(--white-color);
+}
 
 
 nav .flex {
@@ -99,14 +105,6 @@ nav .flex {
 a.logo{
     width: 20%;
 }
-
-
-/* #first-section {
-    position: relative;
-    overflow: hidden;
-    background: url("../images/bg-curvy-desktop.svg");
-} */
-
 
 .see {
     position: relative;
@@ -175,10 +173,9 @@ img.rounded {
 
 
 footer {
-    padding: 20px;
+    padding: 40px 20px;
     background: hsl(216, 53%, 9%);
     color: var(--white-color);
-    /* position: relative; */
 }
 
 footer img {
@@ -191,8 +188,11 @@ footer .logo img {
 }
 
 .footer-item {
-    margin: 30px auto;
+    margin: 15px auto;
+    width: 100%;
 }
+
+
 footer ul {
     padding-left: 0;
 }
@@ -219,6 +219,11 @@ footer ul li {
     font-size: 16px;
 }
 
+.copyright {
+    display: none;
+    padding-top: 10px;
+}
+
 #switch {
     position: fixed;
     bottom: 10px;
@@ -226,40 +231,15 @@ footer ul li {
 }
 
 #switch i {
-    font-size: 20px;
-    /* color: var(--Dark-blue); */
+    font-size: 20px; 
     color: var(--cyan-color);
     padding: 5px;
     border-radius: 50%;
-    z-index: 100;
+    z-index: 1000;
 }
 
-
 .dark-theme {
+    transition: background .5s linear;
     background: var(--Dark-blue);
     color: var(--white-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #first-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    z-index: -1;
-    transform: rotate(30deg);
-} */
