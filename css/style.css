@@ -15,7 +15,6 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    transition: color 5s linear;
 }
 
 * {
@@ -52,9 +51,9 @@ img {
 }
 
 section {
+    transition: background 1s ease-in-out, color 1s ease-in-out;
     padding: 70px 20px;
     margin: 0 auto;
-    transition: color .5s linear;
 }
 
 button {
@@ -239,7 +238,7 @@ footer ul li {
 }
 
 .dark-theme {
-    transition: background .5s linear;
+    transition: background 1s ease-in-out, color 1s ease-in-out;
     background: var(--Dark-blue);
     color: var(--white-color);
 }
